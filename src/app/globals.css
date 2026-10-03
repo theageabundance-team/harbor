@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fbf7ef;
+  --foreground: #16202e;
+
+  --color-navy: #0b1e33;
+  --color-navy-light: #163351;
+  --color-navy-dark: #060f1a;
+  --color-gold: #c9a24b;
+  --color-gold-light: #e8cd8c;
+  --color-cream: #fbf7ef;
+  --color-mist: #efe7d6;
+  --color-teal: #3e7c78;
+  --color-ink: #16202e;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-harbor-navy: var(--color-navy);
+  --color-harbor-navy-light: var(--color-navy-light);
+  --color-harbor-navy-dark: var(--color-navy-dark);
+  --color-harbor-gold: var(--color-gold);
+  --color-harbor-gold-light: var(--color-gold-light);
+  --color-harbor-cream: var(--color-cream);
+  --color-harbor-mist: var(--color-mist);
+  --color-harbor-teal: var(--color-teal);
+  --color-harbor-ink: var(--color-ink);
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-fraunces), Georgia, serif;
+}
+
+@keyframes harbor-glow {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+.harbor-beacon {
+  animation: harbor-glow 4.5s ease-in-out infinite;
+}
+
+@keyframes harbor-drift {
+  0% {
+    transform: translateX(-6%);
+  }
+  50% {
+    transform: translateX(4%);
+  }
+  100% {
+    transform: translateX(-6%);
+  }
+}
+
+.harbor-waves {
+  animation: harbor-drift 18s ease-in-out infinite;
+}
+
+::selection {
+  background: var(--color-gold-light);
+  color: var(--color-navy-dark);
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 999px;
+}
