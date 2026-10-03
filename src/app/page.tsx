@@ -7,23 +7,23 @@ import { getSession } from "@/lib/session";
 const features = [
   {
     icon: AskIcon,
-    title: "Ask the Bible",
-    copy: "Ask any question about Scripture in plain language and receive clear, Bible-grounded answers with the verses behind them.",
+    title: "Demander à la Bible",
+    copy: "Posez une question sur les Écritures en langage simple et recevez une réponse claire, fondée sur la Bible, avec les versets qui l'appuient.",
   },
   {
     icon: SunriseIcon,
-    title: "Daily Reading",
-    copy: "A short passage and reflection every morning, so you can begin each day anchored in the Word.",
+    title: "Lecture du jour",
+    copy: "Un court passage et une réflexion chaque matin, pour commencer la journée ancré dans la Parole.",
   },
   {
     icon: PrayerIcon,
-    title: "Guided Prayer",
-    copy: "Gentle, guided prayers for gratitude, peace, strength, and surrender — whenever you need the words.",
+    title: "Prière guidée",
+    copy: "Des prières douces et guidées pour la gratitude, la paix, la force et l'abandon — chaque fois que vous avez besoin des mots.",
   },
   {
     icon: MusicIcon,
-    title: "Worship",
-    copy: "A hand-picked collection of worship songs to still your heart before or after your time in the Word.",
+    title: "Louange",
+    copy: "Une sélection de chants de louange pour apaiser votre cœur avant ou après votre temps dans la Parole.",
   },
 ];
 
@@ -68,7 +68,7 @@ export default async function Home() {
           href="#features"
           className="hidden text-sm text-harbor-cream/60 transition-colors hover:text-harbor-cream sm:block"
         >
-          What&rsquo;s inside
+          Ce qui vous attend
         </a>
       </header>
 
@@ -77,18 +77,19 @@ export default async function Home() {
         <div>
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-harbor-gold/30 bg-harbor-gold/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-harbor-gold-light">
             <span className="harbor-beacon h-1.5 w-1.5 rounded-full bg-harbor-gold-light" />
-            Your daily devotional companion
+            Votre compagnon de dévotion quotidienne
           </div>
           <h1 className="font-display text-4xl leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
-            A quiet harbor for your
-            <span className="italic text-harbor-gold-light"> faith</span>,
-            every single day.
+            Un port tranquille pour votre
+            <span className="italic text-harbor-gold-light"> foi</span>,
+            chaque jour.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-harbor-cream/70">
-            Ask any question about the Bible and get clear, Scripture-based
-            answers. Start your morning with a guided reading, pray with
-            words when you have none of your own, and let worship music carry
-            you the rest of the way.
+            Posez n&rsquo;importe quelle question sur la Bible et recevez des
+            réponses claires, fondées sur les Écritures. Commencez votre
+            matinée par une lecture guidée, priez avec des mots quand vous
+            n&rsquo;en avez pas, et laissez la musique de louange vous porter
+            le reste du chemin.
           </p>
 
           <div className="mt-10 grid max-w-md grid-cols-2 gap-4 sm:grid-cols-4">
@@ -111,9 +112,9 @@ export default async function Home() {
           <div className="relative rounded-[28px] border border-white/10 bg-white/[0.04] p-8 shadow-2xl shadow-black/30 backdrop-blur-xl">
             <div className="mb-6 flex flex-col items-center gap-3 text-center">
               <LogoMark className="h-10 w-10 text-harbor-gold" />
-              <h2 className="font-display text-2xl">Welcome to Harbor</h2>
+              <h2 className="font-display text-2xl">Bienvenue à Harbor</h2>
               <p className="text-sm text-harbor-cream/50">
-                Enter with your name and email to begin.
+                Entrez avec votre nom et votre e-mail pour commencer.
               </p>
             </div>
             <EnterForm />
@@ -129,10 +130,10 @@ export default async function Home() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 max-w-2xl">
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-harbor-gold-light">
-              Inside Harbor
+              Dans Harbor
             </span>
             <h2 className="mt-3 font-display text-3xl sm:text-4xl">
-              Everything you need to stay close to the Word.
+              Tout ce qu&rsquo;il vous faut pour rester proche de la Parole.
             </h2>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -155,7 +156,8 @@ export default async function Home() {
       </section>
 
       <footer className="relative z-10 border-t border-white/10 px-6 py-8 text-center text-xs text-harbor-cream/40 sm:px-10">
-        Harbor &middot; A daily companion for Scripture, prayer, and worship.
+        Harbor &middot; Un compagnon quotidien pour les Écritures, la prière
+        et la louange.
       </footer>
     </main>
   );

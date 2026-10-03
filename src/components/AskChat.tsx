@@ -9,10 +9,10 @@ type ChatMessage = {
 };
 
 const SUGGESTIONS = [
-  "What does the Bible say about anxiety?",
-  "Why did Jesus speak in parables?",
-  "What is the meaning of grace?",
-  "How can I forgive someone who hurt me?",
+  "Que dit la Bible sur l'anxiété ?",
+  "Pourquoi Jésus parlait-il en paraboles ?",
+  "Quel est le sens de la grâce ?",
+  "Comment pardonner à quelqu'un qui m'a blessé ?",
 ];
 
 export function AskChat() {
@@ -40,7 +40,7 @@ export function AskChat() {
       if (!res.ok) {
         setMessages((prev) => [
           ...prev,
-          { role: "system", content: data.error ?? "Something went wrong." },
+          { role: "system", content: data.error ?? "Une erreur est survenue." },
         ]);
       } else {
         setMessages((prev) => [...prev, { role: "assistant", content: data.answer }]);
@@ -48,7 +48,7 @@ export function AskChat() {
     } catch {
       setMessages((prev) => [
         ...prev,
-        { role: "system", content: "Network error — please try again." },
+        { role: "system", content: "Erreur réseau — veuillez réessayer." },
       ]);
     } finally {
       setLoading(false);
@@ -68,11 +68,11 @@ export function AskChat() {
             </div>
             <div>
               <h2 className="font-display text-xl text-harbor-navy">
-                Ask anything about the Bible.
+                Posez n&rsquo;importe quelle question sur la Bible.
               </h2>
               <p className="mx-auto mt-2 max-w-sm text-sm text-harbor-ink/55">
-                Every answer is grounded in Scripture, with the references
-                behind it.
+                Chaque réponse est fondée sur les Écritures, avec les
+                références qui l&rsquo;appuient.
               </p>
             </div>
             <div className="grid w-full max-w-lg grid-cols-1 gap-2 sm:grid-cols-2">
@@ -135,7 +135,7 @@ export function AskChat() {
               ask(input);
             }
           }}
-          placeholder="Ask a question about the Bible…"
+          placeholder="Posez une question sur la Bible…"
           rows={1}
           className="max-h-32 flex-1 resize-none rounded-xl border border-harbor-mist bg-harbor-cream px-4 py-3 text-sm outline-none focus:border-harbor-gold/50"
         />
@@ -143,7 +143,7 @@ export function AskChat() {
           type="submit"
           disabled={loading || !input.trim()}
           className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-harbor-gold text-harbor-navy-dark transition-opacity hover:opacity-90 disabled:opacity-40"
-          aria-label="Send question"
+          aria-label="Envoyer la question"
         >
           <ArrowRightIcon className="h-4 w-4" />
         </button>

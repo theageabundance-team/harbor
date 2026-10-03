@@ -16,12 +16,12 @@ export async function enterHarbor(
   const email = String(formData.get("email") ?? "").trim();
 
   if (!name) {
-    return { error: "Please enter the name you purchased under." };
+    return { error: "Veuillez entrer le nom utilisé lors de votre achat." };
   }
 
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailPattern.test(email)) {
-    return { error: "Please enter a valid email address." };
+    return { error: "Veuillez entrer une adresse e-mail valide." };
   }
 
   const store = await cookies();

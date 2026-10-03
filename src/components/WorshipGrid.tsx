@@ -23,7 +23,7 @@ function TrackCard({ track }: { track: WorshipTrack }) {
             type="button"
             onClick={() => setPlaying(true)}
             className="group absolute inset-0 flex items-center justify-center"
-            aria-label={`Play ${track.title}`}
+            aria-label={`Lire ${track.title}`}
           >
             <img
               src={`https://img.youtube.com/vi/${track.youtubeId}/hqdefault.jpg`}

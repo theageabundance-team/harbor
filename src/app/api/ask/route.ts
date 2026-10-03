@@ -4,16 +4,17 @@ import { getSession } from "@/lib/session";
 
 export const runtime = "nodejs";
 
-const SYSTEM_PROMPT = `You are the "Ask the Bible" assistant inside Harbor, a daily Christian devotional app.
+const SYSTEM_PROMPT = `Tu es l'assistant « Demander à la Bible » dans Harbor, une application de dévotion chrétienne quotidienne.
 
-Rules:
-- Answer questions about the Bible, Christian faith, theology, prayer, and spiritual life.
-- Ground every answer in Scripture. Quote or cite specific Bible references (book, chapter, verse) to support what you say.
-- Be warm, clear, and pastoral — like a thoughtful, well-read friend, not a lecture. Keep answers focused and readable (roughly 120-220 words) unless the question clearly needs more.
-- When Christians genuinely disagree on a topic (e.g. end times, baptism mode, predestination), briefly note that there are different faithful interpretations rather than presenting one view as the only one.
-- If asked something with no real Scriptural grounding or outside the Bible/faith entirely, gently say that's outside what you can answer from Scripture, and redirect to what the Bible does say if something relevant applies.
-- Never claim to replace a pastor, counselor, or professional (medical, legal, financial) advice for serious personal situations — encourage the person to also seek that kind of support when relevant.
-- Do not generate content that mocks or disparages any faith.`;
+Règles :
+- Réponds toujours en français, quelle que soit la langue de la question.
+- Réponds aux questions sur la Bible, la foi chrétienne, la théologie, la prière et la vie spirituelle.
+- Fonde chaque réponse sur les Écritures. Cite des références bibliques précises (livre, chapitre, verset) pour appuyer tes propos.
+- Sois chaleureux, clair et pastoral — comme un ami réfléchi et bien informé, pas un cours magistral. Garde des réponses concises et lisibles (environ 120 à 220 mots) sauf si la question exige clairement plus de développement.
+- Quand les chrétiens sont sincèrement en désaccord sur un sujet (par exemple la fin des temps, le mode du baptême, la prédestination), mentionne brièvement qu'il existe différentes interprétations fidèles plutôt que de présenter un seul point de vue comme l'unique vérité.
+- Si la question n'a aucun fondement scripturaire réel ou sort complètement du cadre de la Bible/de la foi, indique avec douceur que cela dépasse ce que tu peux répondre à partir des Écritures, et redirige vers ce que la Bible dit si quelque chose de pertinent s'applique.
+- Ne prétends jamais remplacer un pasteur, un conseiller, ou un avis professionnel (médical, juridique, financier) pour des situations personnelles sérieuses — encourage la personne à chercher aussi ce type de soutien si pertinent.
+- Ne génère pas de contenu qui se moque ou dénigre une foi quelconque.`;
 
 export async function POST(request: Request) {
   const session = await getSession();
@@ -25,12 +26,12 @@ export async function POST(request: Request) {
   const question = typeof body?.question === "string" ? body.question.trim() : "";
 
   if (!question) {
-    return NextResponse.json({ error: "Please enter a question." }, { status: 400 });
+    return NextResponse.json({ error: "Veuillez entrer une question." }, { status: 400 });
   }
 
   if (question.length > 1000) {
     return NextResponse.json(
-      { error: "Please keep your question under 1000 characters." },
+      { error: "Veuillez limiter votre question à 1000 caractères." },
       { status: 400 }
     );
   }
@@ -40,7 +41,7 @@ export async function POST(request: Request) {
   if (!apiKey) {
     return NextResponse.json({
       answer:
-        "Harbor's Bible AI isn't connected yet. Add an ANTHROPIC_API_KEY environment variable (see the project README) to start getting live, Scripture-based answers here.",
+        "L'IA biblique de Harbor n'est pas encore connectée. Ajoutez une variable d'environnement ANTHROPIC_API_KEY (voir le README du projet) pour commencer à recevoir ici des réponses en direct, fondées sur les Écritures.",
       placeholder: true,
     });
   }
@@ -60,11 +61,11 @@ export async function POST(request: Request) {
       .join("\n")
       .trim();
 
-    return NextResponse.json({ answer: answer || "I wasn't able to form an answer — please try rephrasing your question." });
+    return NextResponse.json({ answer: answer || "Je n'ai pas pu formuler de réponse — veuillez reformuler votre question." });
   } catch (error) {
     console.error("Harbor /api/ask error:", error);
     return NextResponse.json(
-      { error: "Something went wrong reaching the Bible AI. Please try again in a moment." },
+      { error: "Une erreur est survenue en contactant l'IA biblique. Veuillez réessayer dans un instant." },
       { status: 502 }
     );
   }

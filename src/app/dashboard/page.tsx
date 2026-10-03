@@ -7,26 +7,26 @@ const cards = [
   {
     href: "/dashboard/ask",
     icon: AskIcon,
-    title: "Ask the Bible",
-    copy: "Bring any question — doubts, confusion, curiosity — and get a clear, Scripture-based answer.",
+    title: "Demander à la Bible",
+    copy: "Apportez n'importe quelle question — doutes, confusion, curiosité — et recevez une réponse claire, fondée sur les Écritures.",
   },
   {
     href: "/dashboard/reading",
     icon: SunriseIcon,
-    title: "Daily Reading",
-    copy: "Today's passage and reflection, ready whenever you are.",
+    title: "Lecture du jour",
+    copy: "Le passage et la réflexion du jour, prêts quand vous l'êtes.",
   },
   {
     href: "/dashboard/prayer",
     icon: PrayerIcon,
-    title: "Guided Prayer",
-    copy: "Pick a mood and pray through it, line by line.",
+    title: "Prière guidée",
+    copy: "Choisissez une humeur et priez à travers elle, ligne par ligne.",
   },
   {
     href: "/dashboard/worship",
     icon: MusicIcon,
-    title: "Worship",
-    copy: "Settle into a hand-picked set of worship songs.",
+    title: "Louange",
+    copy: "Installez-vous dans une sélection de chants de louange.",
   },
 ];
 
@@ -38,18 +38,18 @@ export default function DashboardHome() {
     <div className="mx-auto max-w-5xl">
       <div className="mb-8">
         <span className="text-xs font-semibold uppercase tracking-[0.2em] text-harbor-gold">
-          {new Date().toLocaleDateString("en-US", {
+          {new Date().toLocaleDateString("fr-FR", {
             weekday: "long",
             month: "long",
             day: "numeric",
           })}
         </span>
         <h1 className="mt-2 font-display text-3xl text-harbor-navy sm:text-4xl">
-          Come in from the noise.
+          Venez vous abriter du bruit.
         </h1>
         <p className="mt-2 max-w-xl text-harbor-ink/60">
-          Here&rsquo;s your harbor for today — Scripture, a question answered,
-          a prayer, or a song to settle into.
+          Voici votre port pour aujourd&rsquo;hui — les Écritures, une
+          question répondue, une prière, ou un chant pour vous poser.
         </p>
       </div>
 
@@ -68,7 +68,7 @@ export default function DashboardHome() {
               {card.copy}
             </p>
             <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-harbor-gold">
-              Open
+              Ouvrir
               <ArrowRightIcon className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
             </span>
           </Link>
@@ -78,24 +78,24 @@ export default function DashboardHome() {
       <div className="mt-10 grid grid-cols-1 gap-5 lg:grid-cols-2">
         <div className="rounded-2xl border border-harbor-mist bg-harbor-navy p-7 text-harbor-cream">
           <span className="text-xs font-semibold uppercase tracking-[0.18em] text-harbor-gold-light">
-            Today&rsquo;s Reading &middot; {reading.theme}
+            Lecture du jour &middot; {reading.theme}
           </span>
           <h3 className="mt-2 font-display text-2xl">{reading.reference}</h3>
           <p className="mt-3 text-sm italic leading-relaxed text-harbor-cream/70">
-            &ldquo;{reading.passage[0]}&rdquo;
+            &laquo; {reading.passage[0]} &raquo;
           </p>
           <Link
             href="/dashboard/reading"
             className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-harbor-gold-light hover:text-harbor-gold"
           >
-            Read the full passage
+            Lire le passage complet
             <ArrowRightIcon className="h-3.5 w-3.5" />
           </Link>
         </div>
 
         <div className="rounded-2xl border border-harbor-mist bg-white p-7">
           <span className="text-xs font-semibold uppercase tracking-[0.18em] text-harbor-gold">
-            Suggested Prayer &middot; {prayerOfTheDay.mood}
+            Prière suggérée &middot; {prayerOfTheDay.mood}
           </span>
           <h3 className="mt-2 font-display text-2xl text-harbor-navy">
             {prayerOfTheDay.title}
@@ -107,7 +107,7 @@ export default function DashboardHome() {
             href={`/dashboard/prayer#${prayerOfTheDay.slug}`}
             className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-harbor-navy hover:text-harbor-gold"
           >
-            Pray this now
+            Prier maintenant
             <ArrowRightIcon className="h-3.5 w-3.5" />
           </Link>
         </div>

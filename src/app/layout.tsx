@@ -15,15 +15,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Harbor — Daily Devotional & Bible AI",
+  title: "Harbor — Dévotion quotidienne & IA biblique",
   description:
-    "Harbor is your daily devotional companion: ask any question about the Bible and get clear, Scripture-based answers, plus daily readings, guided prayers, and worship music.",
+    "Harbor est votre compagnon de dévotion quotidienne : posez n'importe quelle question sur la Bible et recevez des réponses claires, fondées sur les Écritures, ainsi que des lectures quotidiennes, des prières guidées et de la musique de louange.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang="en"
+      lang="fr"
       className={`${fraunces.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-harbor-cream text-harbor-ink">

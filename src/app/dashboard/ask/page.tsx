@@ -10,10 +10,10 @@ export default function AskPage() {
         </div>
         <div>
           <span className="text-xs font-semibold uppercase tracking-[0.18em] text-harbor-gold">
-            Ask the Bible
+            Demander à la Bible
           </span>
           <h1 className="font-display text-2xl text-harbor-navy sm:text-3xl">
-            Your questions, answered from Scripture.
+            Vos questions, répondues par les Écritures.
           </h1>
         </div>
       </div>

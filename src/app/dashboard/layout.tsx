@@ -30,7 +30,7 @@ export default async function DashboardLayout({ children }: LayoutProps<"/dashbo
               type="submit"
               className="mt-3 w-full rounded-lg px-2 py-2 text-left text-sm text-harbor-ink/50 transition-colors hover:bg-harbor-mist/60 hover:text-harbor-ink"
             >
-              Leave Harbor
+              Quitter Harbor
             </button>
           </form>
         </div>
@@ -44,14 +44,14 @@ export default async function DashboardLayout({ children }: LayoutProps<"/dashbo
               type="submit"
               className="text-xs font-medium text-harbor-ink/50 underline-offset-2 hover:underline"
             >
-              Leave
+              Quitter
             </button>
           </form>
         </header>
 
         <div className="hidden shrink-0 items-center justify-between border-b border-harbor-mist bg-white/40 px-10 py-5 md:flex">
           <p className="font-display text-lg text-harbor-ink/80">
-            Welcome back, {firstName}.
+            Bon retour, {firstName}.
           </p>
         </div>
 

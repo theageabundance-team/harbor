@@ -7,185 +7,185 @@ export type DailyReading = {
 };
 
 /**
- * Scripture text is the World English Bible (WEB), public domain.
- * Reflections and prayer prompts are original to Harbor.
+ * Le texte biblique est tiré de la Bible Segond 1910 (LSG), domaine public.
+ * Les réflexions et les prières sont des écrits originaux pour Harbor.
  */
 export const dailyReadings: DailyReading[] = [
   {
-    reference: "Psalm 23:1-6",
-    theme: "Trust & Provision",
+    reference: "Psaume 23.1-6",
+    theme: "Confiance & provision",
     passage: [
-      "Yahweh is my shepherd: I shall lack nothing.",
-      "He makes me lie down in green pastures. He leads me beside still waters.",
-      "He restores my soul. He guides me in the paths of righteousness for his name's sake.",
-      "Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me. Your rod and your staff, they comfort me.",
-      "You prepare a table before me in the presence of my enemies. You anoint my head with oil. My cup runs over.",
-      "Surely goodness and loving kindness shall follow me all the days of my life, and I will dwell in Yahweh's house forever.",
+      "Cantique de David. L'Éternel est mon berger : je ne manquerai de rien.",
+      "Il me fait reposer dans de verts pâturages, Il me dirige près des eaux paisibles.",
+      "Il restaure mon âme, Il me conduit dans les sentiers de la justice, à cause de son nom.",
+      "Quand je marche dans la vallée de l'ombre de la mort, je ne crains aucun mal, car tu es avec moi : ta houlette et ton bâton me rassurent.",
+      "Tu dresses devant moi une table, en face de mes adversaires ; tu oins d'huile ma tête, et ma coupe déborde.",
+      "Oui, le bonheur et la grâce m'accompagneront tous les jours de ma vie, et j'habiterai dans la maison de l'Éternel jusqu'à la fin de mes jours.",
     ],
     reflection:
-      "Before anything else is asked of you today, be led. A shepherd doesn't wait for the sheep to figure out the way — he walks ahead of them. Wherever today takes you, you are not navigating alone.",
+      "Avant même que quoi que ce soit ne vous soit demandé aujourd'hui, laissez-vous conduire. Un berger n'attend pas que ses brebis trouvent seules le chemin — il marche devant elles. Où que vous mène cette journée, vous n'avancez pas seul.",
     prayerPrompt:
-      "Lord, today I lay down my need to control the path. Lead me to still water. Restore what feels worn down in me.",
+      "Seigneur, aujourd'hui je dépose mon besoin de tout contrôler. Conduis-moi vers des eaux paisibles. Restaure ce qui, en moi, est usé.",
   },
   {
-    reference: "John 3:16-17",
-    theme: "Grace",
+    reference: "Jean 3.16-17",
+    theme: "Grâce",
     passage: [
-      "For God so loved the world, that he gave his one and only Son, that whoever believes in him should not perish, but have eternal life.",
-      "For God didn't send his Son into the world to judge the world, but that the world should be saved through him.",
+      "Car Dieu a tant aimé le monde qu'il a donné son Fils unique, afin que quiconque croit en lui ne périsse point, mais qu'il ait la vie éternelle.",
+      "Dieu, en effet, n'a pas envoyé son Fils dans le monde pour qu'il juge le monde, mais pour que le monde soit sauvé par lui.",
     ],
     reflection:
-      "This is the center of everything Harbor points back to: you were not sent a verdict, you were sent a Savior. Whatever you're carrying into today, it doesn't change how deeply you are loved.",
+      "C'est le centre de tout ce vers quoi Harbor vous ramène : vous n'avez pas reçu une sentence, mais un Sauveur. Quoi que vous portiez en entrant dans cette journée, cela ne change rien à la profondeur de l'amour qu'on vous porte.",
     prayerPrompt:
-      "Father, thank you for loving the world — and loving me — not as a transaction, but as a gift. Help me receive that grace today instead of earning for it.",
+      "Père, merci d'aimer le monde — et de m'aimer — non comme une transaction, mais comme un don. Aide-moi à recevoir cette grâce aujourd'hui plutôt que de chercher à la mériter.",
   },
   {
-    reference: "Philippians 4:6-7",
-    theme: "Peace over Anxiety",
+    reference: "Philippiens 4.6-7",
+    theme: "La paix plutôt que l'anxiété",
     passage: [
-      "In nothing be anxious, but in everything, by prayer and petition with thanksgiving, let your requests be made known to God.",
-      "And the peace of God, which surpasses all understanding, will guard your hearts and your thoughts in Christ Jesus.",
+      "Ne vous inquiétez de rien ; mais en toute chose faites connaître vos besoins à Dieu par des prières et des supplications, avec des actions de grâces.",
+      "Et la paix de Dieu, qui surpasse toute intelligence, gardera vos cœurs et vos pensées en Jésus-Christ.",
     ],
     reflection:
-      "Notice the exchange: anxiety handed over, thanksgiving offered instead, and peace received that doesn't even make logical sense given your circumstances. That trade is available to you today.",
+      "Remarquez l'échange : l'inquiétude remise entre les mains de Dieu, la reconnaissance offerte à la place, et une paix reçue qui ne tient même pas compte de la logique de vos circonstances. Cet échange vous est offert aujourd'hui.",
     prayerPrompt:
-      "God, here is what's weighing on me right now. I release it to you and choose to thank you in the middle of it. Guard my heart and my mind today.",
+      "Dieu, voici ce qui pèse sur moi en ce moment. Je te le remets et je choisis de te rendre grâce au milieu même de cette épreuve. Garde mon cœur et mon esprit aujourd'hui.",
   },
   {
-    reference: "Matthew 6:25-27",
-    theme: "Do Not Worry",
+    reference: "Matthieu 6.25-27",
+    theme: "Ne pas s'inquiéter",
     passage: [
-      "Therefore I tell you, don't be anxious for your life: what you will eat, or what you will drink; nor yet for your body, what you will wear. Isn't life more than food, and the body more than clothing?",
-      "See the birds of the sky, that they don't sow, neither do they reap, nor gather into barns. Your heavenly Father feeds them. Aren't you of much more value than they?",
-      "Which of you, by being anxious, can add one moment to his lifespan?",
+      "C'est pourquoi je vous dis : ne vous inquiétez pas pour votre vie de ce que vous mangerez, ni pour votre corps, de quoi vous serez vêtus. La vie n'est-elle pas plus que la nourriture, et le corps plus que le vêtement ?",
+      "Regardez les oiseaux du ciel : ils ne sèment ni ne moissonnent, et ils n'amassent rien dans des greniers ; et votre Père céleste les nourrit. Ne valez-vous pas beaucoup plus qu'eux ?",
+      "Qui de vous, par ses inquiétudes, peut ajouter une coudée à la durée de sa vie ?",
     ],
     reflection:
-      "Worry promises control and never delivers it. Jesus points to the birds not because their lives are easy, but because they're provided for without striving. You are worth more to your Father than they are.",
+      "L'inquiétude promet le contrôle et ne le livre jamais. Jésus parle des oiseaux non parce que leur vie est facile, mais parce qu'ils sont pourvus sans s'épuiser à lutter. Vous valez plus pour votre Père qu'eux.",
     prayerPrompt:
-      "Lord, I confess the things I've been trying to control through worry instead of trust. Remind me today that you see me and you provide.",
+      "Seigneur, je reconnais les choses que j'ai essayé de contrôler par l'inquiétude plutôt que par la confiance. Rappelle-moi aujourd'hui que tu me vois et que tu pourvois.",
   },
   {
-    reference: "Romans 8:28",
-    theme: "All Things for Good",
+    reference: "Romains 8.28",
+    theme: "Toutes choses concourent au bien",
     passage: [
-      "We know that all things work together for good for those who love God, to those who are called according to his purpose.",
+      "Nous savons, du reste, que toutes choses concourent au bien de ceux qui aiment Dieu, de ceux qui sont appelés selon son dessein.",
     ],
     reflection:
-      "This isn't a promise that everything is good — it's a promise that God is at work even inside what isn't. Nothing you're walking through today is wasted on Him.",
+      "Ce n'est pas la promesse que tout est bon — c'est la promesse que Dieu est à l'œuvre même dans ce qui ne l'est pas. Rien de ce que vous traversez aujourd'hui n'est perdu pour lui.",
     prayerPrompt:
-      "Father, I don't always see how this is working for good. Give me eyes to trust your hand even in what's unclear right now.",
+      "Père, je ne vois pas toujours comment cela concourt au bien. Donne-moi de faire confiance à ta main, même dans ce qui n'est pas clair en ce moment.",
   },
   {
-    reference: "Proverbs 3:5-6",
-    theme: "Trust, Not Understanding",
+    reference: "Proverbes 3.5-6",
+    theme: "Confiance plutôt qu'intelligence",
     passage: [
-      "Trust in Yahweh with all your heart, and don't lean on your own understanding.",
-      "In all your ways acknowledge him, and he will make your paths straight.",
+      "Confie-toi en l'Éternel de tout ton cœur, et ne t'appuie pas sur ta sagesse.",
+      "Reconnais-le dans toutes tes voies, et il aplanira tes sentiers.",
     ],
     reflection:
-      "Trust is hardest exactly where understanding runs out. Today, in the one decision or situation you can't fully reason your way through, this verse is your invitation.",
+      "La confiance est la plus difficile exactement là où la compréhension s'arrête. Aujourd'hui, dans la décision ou la situation que vous ne pouvez pas entièrement raisonner, ce verset est une invitation.",
     prayerPrompt:
-      "God, in the place where I don't understand, I choose to trust you anyway. Make my path straight today.",
+      "Dieu, là où je ne comprends pas, je choisis quand même de te faire confiance. Aplanis mon sentier aujourd'hui.",
   },
   {
-    reference: "Isaiah 41:10",
-    theme: "Fear Not",
+    reference: "Ésaïe 41.10",
+    theme: "Ne crains rien",
     passage: [
-      "Don't you be afraid, for I am with you. Don't be dismayed, for I am your God.",
-      "I will strengthen you. Yes, I will help you. Yes, I will uphold you with the right hand of my righteousness.",
+      "Ne crains rien, car je suis avec toi ; ne promène pas des regards inquiets, car je suis ton Dieu.",
+      "Je te fortifie, je viens à ton secours, je te soutiens de ma droite triomphante.",
     ],
     reflection:
-      "Four promises in one breath: presence, strength, help, and being upheld. Read this one slowly, and let each promise land before moving to the next.",
+      "Quatre promesses en un souffle : présence, force, secours, et soutien. Lisez ce verset lentement, en laissant chaque promesse se poser avant de passer à la suivante.",
     prayerPrompt:
-      "Lord, I name the fear I'm carrying today. Thank you that your presence outweighs it. Strengthen and uphold me.",
+      "Seigneur, je nomme la crainte que je porte aujourd'hui. Merci que ta présence pèse plus lourd qu'elle. Fortifie-moi et soutiens-moi.",
   },
   {
-    reference: "1 Corinthians 13:4-7",
-    theme: "Love Defined",
+    reference: "1 Corinthiens 13.4-7",
+    theme: "La charité définie",
     passage: [
-      "Love is patient and is kind; love doesn't envy. Love doesn't brag, is not proud,",
-      "doesn't behave itself inappropriately, doesn't seek its own way, is not provoked, takes no account of evil;",
-      "doesn't rejoice in unrighteousness, but rejoices with the truth;",
-      "bears all things, believes all things, hopes all things, endures all things.",
+      "La charité est patiente, elle est pleine de bonté ; la charité n'est point envieuse ; la charité ne se vante point, elle ne s'enfle point d'orgueil,",
+      "elle ne fait rien de malhonnête, elle ne cherche point son intérêt, elle ne s'irrite point, elle ne soupçonne point le mal,",
+      "elle ne se réjouit point de l'injustice, mais elle se réjouit de la vérité ;",
+      "elle excuse tout, elle croit tout, elle espère tout, elle supporte tout.",
     ],
     reflection:
-      "Replace the word 'love' with your own name and read it again — that's the aim, not the accusation. Then read it with God as the subject, because that's where it's first true.",
+      "Remplacez le mot « charité » par votre propre nom et relisez — c'est le but, non une accusation. Puis relisez-le avec Dieu comme sujet, car c'est là que c'est vrai en premier lieu.",
     prayerPrompt:
-      "Father, shape my love today to look more like this — patient, humble, and not easily provoked. Love well through me.",
+      "Père, façonne mon amour aujourd'hui pour qu'il ressemble davantage à cela — patient, humble, et pas facilement irrité. Aime bien à travers moi.",
   },
   {
-    reference: "Joshua 1:9",
-    theme: "Be Strong and Courageous",
+    reference: "Josué 1.9",
+    theme: "Fortifie-toi et prends courage",
     passage: [
-      "Haven't I commanded you? Be strong and courageous. Don't be afraid. Don't be dismayed, for Yahweh your God is with you wherever you go.",
+      "Ne t'ai-je pas donné cet ordre : fortifie-toi et prends courage ? Ne t'effraie point et ne t'épouvante point, car l'Éternel, ton Dieu, est avec toi dans tout ce que tu entreprendras.",
     ],
     reflection:
-      "Courage in Scripture is rarely the absence of fear — it's obedience in spite of it, because of who goes with you. Wherever today takes you, that's still true.",
+      "Le courage, dans les Écritures, n'est rarement l'absence de peur — c'est l'obéissance malgré elle, à cause de celui qui marche avec vous. Où que vous mène cette journée, cela reste vrai.",
     prayerPrompt:
-      "God, give me courage for what's in front of me today. Thank you that I don't walk into it alone.",
+      "Dieu, donne-moi du courage pour ce qui m'attend aujourd'hui. Merci de ne pas y aller seul.",
   },
   {
-    reference: "Psalm 46:1-3",
-    theme: "God Our Refuge",
+    reference: "Psaume 46.1-3",
+    theme: "Dieu notre refuge",
     passage: [
-      "God is our refuge and strength, a very present help in trouble.",
-      "Therefore we won't be afraid, though the earth changes, though the mountains are shaken into the heart of the seas;",
-      "though its waters roar and are troubled, though the mountains tremble with their swelling. Selah.",
+      "Dieu est pour nous un refuge et un appui, un secours qui ne manque jamais dans la détresse.",
+      "C'est pourquoi nous sommes sans crainte quand la terre est bouleversée, et que les montagnes chancellent au cœur des mers,",
+      "quand les flots de la mer mugissent, écument, se soulèvent jusqu'à faire trembler les montagnes.",
     ],
     reflection:
-      "This psalm was written for people whose world was genuinely shaking. It doesn't minimize the chaos — it simply insists that God is steadier than it. Let that be true for whatever is shaking in your life today.",
+      "Ce psaume a été écrit pour des gens dont le monde était réellement en train de s'écrouler. Il ne minimise pas le chaos — il affirme simplement que Dieu est plus stable que lui. Que cela soit vrai pour tout ce qui vacille dans votre vie aujourd'hui.",
     prayerPrompt:
-      "Lord, be my refuge today. When things around me feel unstable, let me stand on you instead.",
+      "Seigneur, sois mon refuge aujourd'hui. Quand tout semble instable autour de moi, laisse-moi me tenir sur toi plutôt.",
   },
   {
-    reference: "Matthew 11:28-30",
-    theme: "Rest for the Weary",
+    reference: "Matthieu 11.28-30",
+    theme: "Repos pour les fatigués",
     passage: [
-      "Come to me, all you who labor and are heavily burdened, and I will give you rest.",
-      "Take my yoke upon you, and learn from me, for I am gentle and humble in heart; and you will find rest for your souls.",
-      "For my yoke is easy, and my burden is light.",
+      "Venez à moi, vous tous qui êtes fatigués et chargés, et je vous donnerai du repos.",
+      "Prenez mon joug sur vous et recevez mes instructions, car je suis doux et humble de cœur ; et vous trouverez du repos pour vos âmes.",
+      "Car mon joug est doux, et mon fardeau léger.",
     ],
     reflection:
-      "Notice this isn't an invitation to stop working — it's an invitation to stop carrying it alone. Jesus offers a yoke, not a hammock: shared weight, gentler pace.",
+      "Remarquez que ce n'est pas une invitation à cesser de travailler — c'est une invitation à cesser de porter le poids seul. Jésus offre un joug, non un hamac : un fardeau partagé, un rythme plus doux.",
     prayerPrompt:
-      "Jesus, I'm tired. I bring you what I've been carrying alone and ask for your rest instead of my striving.",
+      "Jésus, je suis fatigué. Je t'apporte ce que je portais seul et je te demande ton repos plutôt que mon effort acharné.",
   },
   {
-    reference: "Galatians 5:22-23",
-    theme: "Fruit of the Spirit",
+    reference: "Galates 5.22-23",
+    theme: "Le fruit de l'Esprit",
     passage: [
-      "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faith,",
-      "gentleness, and self-control. Against such things there is no law.",
+      "Mais le fruit de l'Esprit, c'est l'amour, la joie, la paix, la patience, la bonté, la bénignité, la fidélité, la douceur, la tempérance ;",
+      "la loi n'est pas contre ces choses.",
     ],
     reflection:
-      "Fruit grows; it isn't manufactured. These qualities aren't a checklist to perform today — they're evidence of staying close to the Spirit, one unhurried day at a time.",
+      "Le fruit pousse ; il ne se fabrique pas. Ces qualités ne sont pas une liste de choses à accomplir aujourd'hui — elles sont la preuve que l'on reste proche de l'Esprit, un jour tranquille après l'autre.",
     prayerPrompt:
-      "Holy Spirit, grow your fruit in me today — especially the one I need most right now. I want to stay close enough to you for that to happen.",
+      "Saint-Esprit, fais grandir ton fruit en moi aujourd'hui — surtout celui dont j'ai le plus besoin en ce moment. Je veux rester assez proche de toi pour que cela arrive.",
   },
   {
-    reference: "Jeremiah 29:11-13",
-    theme: "Plans to Prosper",
+    reference: "Jérémie 29.11-13",
+    theme: "Des projets pour prospérer",
     passage: [
-      "For I know the thoughts that I think toward you, says Yahweh, thoughts of peace, and not of evil, to give you hope and a future.",
-      "You shall call on me, and you shall go and pray to me, and I will listen to you.",
-      "You shall seek me, and find me, when you search for me with all your heart.",
+      "Car je connais les projets que j'ai formés sur vous, dit l'Éternel, projets de paix et non de malheur, afin de vous donner un avenir et de l'espérance.",
+      "Vous m'invoquerez, et vous partirez ; vous me prierez, et je vous exaucerai.",
+      "Vous me chercherez, et vous me trouverez, si vous me cherchez de tout votre cœur.",
     ],
     reflection:
-      "This promise was spoken to people in exile, far from home, with no clear way back. If God's plans for them were still good, trust that His plans for you — in whatever season this is — still are too.",
+      "Cette promesse a été adressée à des gens en exil, loin de chez eux, sans chemin clair pour rentrer. Si les projets de Dieu pour eux étaient encore bons, faites confiance : ses projets pour vous — quelle que soit cette saison — le sont aussi.",
     prayerPrompt:
-      "Father, I seek you today with my whole heart. Thank you for thoughts of peace over me, even when the season feels uncertain.",
+      "Père, je te cherche aujourd'hui de tout mon cœur. Merci pour des projets de paix à mon égard, même quand cette saison semble incertaine.",
   },
   {
-    reference: "Romans 12:1-2",
-    theme: "Transformed Mind",
+    reference: "Romains 12.1-2",
+    theme: "Un esprit transformé",
     passage: [
-      "Therefore I urge you, brothers, by the mercies of God, to present your bodies a living sacrifice, holy, acceptable to God, which is your spiritual service.",
-      "Don't be conformed to this world, but be transformed by the renewing of your mind, so that you may prove what is the good, well-pleasing, and perfect will of God.",
+      "Je vous exhorte donc, frères, par les compassions de Dieu, à offrir vos corps comme un sacrifice vivant, saint, agréable à Dieu, ce qui sera de votre part un culte raisonnable.",
+      "Ne vous conformez pas au siècle présent, mais soyez transformés par le renouvellement de l'intelligence, afin que vous discerniez quelle est la volonté de Dieu, ce qui est bon, agréable et parfait.",
     ],
     reflection:
-      "Transformation starts in the mind, not the behavior — what you dwell on today shapes who you become tomorrow. Let this reading itself be part of that renewing.",
+      "La transformation commence dans l'esprit, non dans le comportement — ce sur quoi vous méditez aujourd'hui façonne qui vous deviendrez demain. Que cette lecture elle-même fasse partie de ce renouvellement.",
     prayerPrompt:
-      "Lord, renew my mind today. Where I've been shaped by the world's noise, reshape me by your truth instead.",
+      "Seigneur, renouvelle mon esprit aujourd'hui. Là où j'ai été façonné par le bruit du monde, refaçonne-moi plutôt par ta vérité.",
   },
 ];
 

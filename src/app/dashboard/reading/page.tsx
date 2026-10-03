@@ -12,10 +12,10 @@ export default function ReadingPage() {
         </div>
         <div>
           <span className="text-xs font-semibold uppercase tracking-[0.18em] text-harbor-gold">
-            Daily Reading &middot; Day {dayNumber} of {dailyReadings.length}
+            Lecture du jour &middot; Jour {dayNumber} sur {dailyReadings.length}
           </span>
           <h1 className="font-display text-2xl text-harbor-navy sm:text-3xl">
-            {new Date().toLocaleDateString("en-US", {
+            {new Date().toLocaleDateString("fr-FR", {
               weekday: "long",
               month: "long",
               day: "numeric",
@@ -40,18 +40,18 @@ export default function ReadingPage() {
           ))}
         </div>
         <p className="mt-3 text-xs text-harbor-ink/40">
-          World English Bible (WEB) &middot; Public Domain
+          Bible Segond 1910 (LSG) &middot; Domaine public
         </p>
 
         <div className="mt-8 rounded-xl bg-harbor-mist/50 p-6">
-          <h3 className="font-display text-base text-harbor-navy">Reflection</h3>
+          <h3 className="font-display text-base text-harbor-navy">Réflexion</h3>
           <p className="mt-2 text-sm leading-relaxed text-harbor-ink/70">
             {reading.reflection}
           </p>
         </div>
 
         <div className="mt-6 rounded-xl border border-harbor-gold/30 bg-harbor-gold/5 p-6">
-          <h3 className="font-display text-base text-harbor-navy">A Prayer for Today</h3>
+          <h3 className="font-display text-base text-harbor-navy">Une prière pour aujourd&rsquo;hui</h3>
           <p className="mt-2 text-sm italic leading-relaxed text-harbor-ink/70">
             {reading.prayerPrompt}
           </p>

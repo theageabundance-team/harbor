@@ -10,10 +10,10 @@ export default function PrayerPage() {
         </div>
         <div>
           <span className="text-xs font-semibold uppercase tracking-[0.18em] text-harbor-gold">
-            Guided Prayer
+            Prière guidée
           </span>
           <h1 className="font-display text-2xl text-harbor-navy sm:text-3xl">
-            Pray through whatever today holds.
+            Priez à travers ce que la journée apporte.
           </h1>
         </div>
       </div>

@@ -5,11 +5,11 @@ import { usePathname } from "next/navigation";
 import { AskIcon, SunriseIcon, PrayerIcon, MusicIcon, CompassIcon } from "@/components/Icons";
 
 const links = [
-  { href: "/dashboard", label: "Home", icon: CompassIcon },
-  { href: "/dashboard/ask", label: "Ask", icon: AskIcon },
-  { href: "/dashboard/reading", label: "Reading", icon: SunriseIcon },
-  { href: "/dashboard/prayer", label: "Prayer", icon: PrayerIcon },
-  { href: "/dashboard/worship", label: "Worship", icon: MusicIcon },
+  { href: "/dashboard", label: "Accueil", icon: CompassIcon },
+  { href: "/dashboard/ask", label: "Bible", icon: AskIcon },
+  { href: "/dashboard/reading", label: "Lecture", icon: SunriseIcon },
+  { href: "/dashboard/prayer", label: "Prière", icon: PrayerIcon },
+  { href: "/dashboard/worship", label: "Louange", icon: MusicIcon },
 ];
 
 export function DashboardMobileNav() {
