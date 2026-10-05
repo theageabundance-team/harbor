@@ -7,7 +7,7 @@ const RELATIVE_UNITS: [Intl.RelativeTimeFormatUnit, number][] = [
   ["minute", 1000 * 60],
 ];
 
-const rtf = new Intl.RelativeTimeFormat("pt-BR", { numeric: "auto" });
+const rtf = new Intl.RelativeTimeFormat("en-US", { numeric: "auto" });
 
 export function formatRelativeTime(isoDate: string): string {
   const diffMs = new Date(isoDate).getTime() - Date.now();
@@ -21,7 +21,7 @@ export function formatRelativeTime(isoDate: string): string {
 }
 
 export function formatDateTime(isoDate: string): string {
-  return new Date(isoDate).toLocaleString("pt-BR", {
+  return new Date(isoDate).toLocaleString("en-US", {
     day: "2-digit",
     month: "short",
     year: "numeric",
@@ -31,7 +31,7 @@ export function formatDateTime(isoDate: string): string {
 }
 
 export function formatDate(isoDate: string): string {
-  return new Date(isoDate).toLocaleDateString("pt-BR", {
+  return new Date(isoDate).toLocaleDateString("en-US", {
     day: "2-digit",
     month: "short",
     year: "numeric",
