@@ -37,6 +37,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# local user-tracking data (see src/lib/users-store.ts)
+/.data
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

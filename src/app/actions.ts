@@ -3,6 +3,7 @@
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { SESSION_COOKIE } from "@/lib/session";
+import { recordLogin } from "@/lib/users-store";
 
 export type EnterState = {
   error?: string;
@@ -23,6 +24,8 @@ export async function enterHarbor(
   if (!emailPattern.test(email)) {
     return { error: "Veuillez entrer une adresse e-mail valide." };
   }
+
+  await recordLogin(name, email);
 
   const store = await cookies();
   store.set(SESSION_COOKIE, JSON.stringify({ name, email }), {

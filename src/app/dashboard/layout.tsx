@@ -1,8 +1,11 @@
+import Link from "next/link";
 import { redirect } from "next/navigation";
 import { Logo } from "@/components/Logo";
 import { DashboardNav } from "@/components/DashboardNav";
 import { DashboardMobileNav } from "@/components/DashboardMobileNav";
+import { ShieldIcon } from "@/components/Icons";
 import { getSession } from "@/lib/session";
+import { isAdminSession } from "@/lib/admin";
 import { leaveHarbor } from "@/app/actions";
 
 export default async function DashboardLayout({ children }: LayoutProps<"/dashboard">) {
@@ -12,6 +15,7 @@ export default async function DashboardLayout({ children }: LayoutProps<"/dashbo
   }
 
   const firstName = session.name.trim().split(/\s+/)[0] || session.name;
+  const isAdmin = isAdminSession(session);
 
   return (
     <div className="flex h-screen overflow-hidden bg-harbor-cream">
@@ -19,6 +23,15 @@ export default async function DashboardLayout({ children }: LayoutProps<"/dashbo
         <Logo className="px-2 text-harbor-navy" markClassName="text-harbor-gold" />
         <div className="mt-10 flex-1 overflow-y-auto">
           <DashboardNav className="flex flex-col gap-1" />
+          {isAdmin && (
+            <Link
+              href="/dashboard/admin"
+              className="mt-4 flex items-center gap-3 rounded-xl border border-harbor-gold/30 bg-harbor-gold/10 px-4 py-3 text-sm font-medium text-harbor-navy transition-colors hover:bg-harbor-gold/20"
+            >
+              <ShieldIcon className="h-5 w-5 text-harbor-gold" />
+              Admin
+            </Link>
+          )}
         </div>
         <div className="border-t border-harbor-mist pt-4">
           <p className="truncate px-2 text-sm font-medium text-harbor-ink/80">
@@ -39,14 +52,24 @@ export default async function DashboardLayout({ children }: LayoutProps<"/dashbo
       <div className="flex h-screen flex-1 flex-col overflow-hidden">
         <header className="flex shrink-0 items-center justify-between border-b border-harbor-mist bg-white/60 px-5 py-4 md:hidden">
           <Logo className="text-harbor-navy" markClassName="text-harbor-gold" />
-          <form action={leaveHarbor}>
-            <button
-              type="submit"
-              className="text-xs font-medium text-harbor-ink/50 underline-offset-2 hover:underline"
-            >
-              Quitter
-            </button>
-          </form>
+          <div className="flex items-center gap-4">
+            {isAdmin && (
+              <Link
+                href="/dashboard/admin"
+                className="text-xs font-medium text-harbor-gold underline-offset-2 hover:underline"
+              >
+                Admin
+              </Link>
+            )}
+            <form action={leaveHarbor}>
+              <button
+                type="submit"
+                className="text-xs font-medium text-harbor-ink/50 underline-offset-2 hover:underline"
+              >
+                Quitter
+              </button>
+            </form>
+          </div>
         </header>
 
         <div className="hidden shrink-0 items-center justify-between border-b border-harbor-mist bg-white/40 px-10 py-5 md:flex">

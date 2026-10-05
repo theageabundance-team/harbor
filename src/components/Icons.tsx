@@ -94,6 +94,26 @@ export function ArrowRightIcon({ className = "h-4 w-4" }: IconProps) {
   );
 }
 
+export function ShieldIcon({ className = "h-6 w-6" }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className}>
+      <path
+        d="M12 3.5 5 6v5.2c0 4.3 3 7.6 7 9.3 4-1.7 7-5 7-9.3V6l-7-2.5Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+      <path
+        d="m9.2 12 1.9 1.9 3.7-3.9"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 export function PlayIcon({ className = "h-5 w-5" }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
